@@ -28,11 +28,13 @@
 
 int autoState = 2;
 
-void autonomous() {
+void autonomous()
+ {
    // run different autonomous routines based on the valye of autoState; autoState
    // could be sleected via some method during initialization usign for example a
    // a potentiometer.
-   switch(autoState) {
+   switch(autoState)
+   {
      case 0:
        drivePID(60);      //will run forever until powered off
      case 1:
