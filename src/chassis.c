@@ -175,7 +175,7 @@ void pivotTurn(int direction, int speed, float angle) {
      speed = 30;
   } else if(speed > 110) {
     speed = 100;              // make sure we have head room for slave
-                              // motor to increass
+                              // motor to increase
   }
 
   // pivotTurn - turn radius is 1/2 * dimaeter of wheel base
