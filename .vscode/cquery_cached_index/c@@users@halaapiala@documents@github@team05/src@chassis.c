@@ -20,7 +20,7 @@ void chassisSetOpcontrol(int left, int right) {
 }
 
 void chassisStopDrive(){
-  // convienance fucntion to stop fhe drive train from moving
+  // convienance fucntion to stop the drive train from moving
   motorSet(LEFT_M_FRONT, 0);
   motorSet(RIGHT_M_FRONT, 0);
 }
@@ -164,7 +164,7 @@ void driveForDistancePID(int distance, int speed) {
 }
 
 void pivotTurn(int direction, int speed, float angle) {
-  // direction -- 1 = left turn, 0 = right pivotTurn
+  // direction -- 1 = right turn, 0 = left pivotTurn
   // speed -- -100 -- 100
   // angle -- desired turn angle in degrees
   //

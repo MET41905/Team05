@@ -5,7 +5,7 @@
 //
 
 #define WHEEL_DIAMETER 4.06      // diameter of drive wheels
-#define WHEEL_BASE 14.4         // wheel base in inches left to right wheel diagonal measured
+#define WHEEL_BASE 14         // wheel base in inches left to right wheel diagonal measured
                               // of chassis.
 
 #define ARCADE_DRIVE false    // when false it runs tank mode, if true
@@ -41,7 +41,7 @@ void drivePID(int masterPower);
 // drive with PID control for a given distnace in inches
 void driveForDistancePID(int distance, int speed);
 
-// make a pivot turn to the right or left for a given angle - andgle
+// make a pivot turn to the right or left for a given angle - angle
 //should be greater the 10 and less equal to 360
 void pivotTurn(int direction, int speed, float angle);
 

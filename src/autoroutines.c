@@ -16,20 +16,44 @@ void compAutoRedRight()
   // All the various autonomous commands for the Competition, Red Sqaure
   // Right position go here.  THen this function is called in auto.c the autonomous()
   // function based on some selector input.
-  driveForDistancePID(22, 60);     // for 10 meter = 394" at speed 60 (-127 to 127 speed parameters)
-  pivotTurn(1, 30, 90);            // turn at speed 30 for 90 degree angle right turn
-  driveForDistancePID(40, 60);     // After turn drive 12" at 50 speed
+  /*driveForDistancePID(17, 60); \
+  delay(1000);    // for 10 meter = 394" at speed 60 (-127 to 127 speed parameters)
+  pivotTurn(0, 60, 85);
+  delay(1000);
+  //liftMoveAngle(50, 80);          //speed, angle
+  driveForDistancePID(42, 60);
+  delay(1000);
   driveForDistancePID(20, -60);
-  pivotTurn(0, 30, 90);
-  driveForDistancePID(52, 60);
-  pivotTurn(1, 30, 90);
+  delay(1000);
+  pivotTurn(1, 60, 85);
+  delay(1000);
+  driveForDistancePID(47, 60);
+  delay(1000);
+  pivotTurn(0, 60, 85);
+  delay(1000);
   driveForDistancePID(20, 60);
+  delay(1000);
   driveForDistancePID(20, -60);
-  pivotTurn(0, 30, 90);
-  driveForDistancePID(52, 60);
-  pivotTurn(1, 30, 90);
+  delay(1000);
+  pivotTurn(1, 60, 85);
+  delay(1000);
+  driveForDistancePID(47, 60);
+  delay(1000);
+  pivotTurn(0, 60, 85);
+  delay(1000);
   driveForDistancePID(20, 60);
+  delay(1000);
   driveForDistancePID(20, -60);
+  */
+  driveForDistancePID(15, 60);
+  delay(1000);
+  pivotTurn(0, 60, 85);
+  driveForDistancePID(15, 60);
+  liftMoveAngle(50, 180);
+  delay(1000);
+  driveForDistancePID(13, 100);
+  liftMoveAngle(50, -20);
+  driveForDistancePID(24, 100);
 
 }
 
