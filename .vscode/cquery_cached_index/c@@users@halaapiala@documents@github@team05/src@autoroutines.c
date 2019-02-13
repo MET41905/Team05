@@ -49,10 +49,10 @@ void compAutoRedRight()
   delay(1000);
   pivotTurn(0, 60, 85);
   driveForDistancePID(15, 60);
-  liftMoveAngle(50, 180);
+  liftMoveAngle(180, 50);
   delay(1000);
   driveForDistancePID(13, 100);
-  liftMoveAngle(50, -20);
+  liftMoveAngle(-50, 20);
   driveForDistancePID(24, 100);
 
 }
